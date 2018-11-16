@@ -1,0 +1,13 @@
+.q img{
+  width: 400px;
+  height: 400px;
+}
+.w{
+  float: left;
+  display: flex;
+align-items: center;
+height: 50vh;
+}
+.q{
+  float: left;
+}

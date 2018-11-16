@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title id="title">pagina</title>
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+
+  <h4 id="kop">Opdracht 3B</h4>
+
+  <div class="main-con">
+    <div class="main">
+
+
+
+
+    <input type="button" value="klik mij!" id="mijnbutton1"/>
+    <input type="button" value="klik mij!" id="mijnbutton2"/>
+    <input type="button" value="klik mij!" id="mijnbutton3"/>
+    <input type="button" value="klik mij!" id="mijnbutton4"/>
+    <input type="button" value="klik mij!" id="mijnbutton5"/>
+    <input type="button" value="YEER" id="mijnbutton6"/>
+
+
+      <img id="img" src="IMG/img1.jpg" alt="">
+</div>
+    </div>
+      <div class="validate-con">
+
+
+        <div id="validatie">
+          <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+      <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+  </a>
+        </div>
+      </div>
+      <script>
+        let button_1 = document.getElementById("mijnbutton1");
+        let button_2 = document.getElementById("mijnbutton2");
+        let button_3 = document.getElementById("mijnbutton3");
+        let button_4 = document.getElementById("mijnbutton4");
+        let button_5 = document.getElementById("mijnbutton5");
+        let button_6 = document.getElementById("mijnbutton6");
+        let nummber = 7;
+        // function reset{
+        //   button_6.style.backgroundColor = ""
+        //   button_1.style.backgroundColor = ""
+        //   button_2.style.backgroundColor = ""
+        //   button_3.style.backgroundColor = ""
+        //   button_4.style.backgroundColor = ""
+        //   button_5.style.backgroundColor = ""
+        // }
+        function Reset() {
+          button_6.style.backgroundColor = ""
+          button_1.style.backgroundColor = ""
+          button_2.style.backgroundColor = ""
+          button_3.style.backgroundColor = ""
+          button_4.style.backgroundColor = ""
+          button_5.style.backgroundColor = ""
+        }
+        button_6.addEventListener('click', () => {
+          Reset()
+          button_6.style.backgroundColor = "#333"
+          if (nummber <= 7) {
+            document.body.style.background = "url(IMG/img" + nummber + ".jpg) no-repeat";
+            kop.style.color = "#ffffff";
+
+            console.log(nummber)
+          }
+
+          if (nummber === 8) {
+            document.body.style.background = "url(IMG/img" + nummber + ".jpg) no-repeat";
+            //nummber++;
+            console.log(nummber)
+            kop.style.color = "#132";
+
+          }
+          if (nummber === 9) {
+            document.body.style.background = "url(IMG/img" + nummber + ".jpg) no-repeat";
+            //pNummber++;
+            console.log(nummber)
+            nummber = 6;
+            kop.style.color = "#00ff00";
+
+
+          }
+          // if (nummber >= 10) {
+          //   nummber = 6;
+          //   console.log(nummber)
+          //
+          // }
+          nummber++;
+
+        })
+        button_1.addEventListener('click', () => {
+
+          Reset()
+
+          button_1.style.backgroundColor = "#333"
+
+
+          img.src = "IMG/img2.jpg";
+          document.getElementById("title").innerHTML = "this is da city";
+          document.getElementById("kop").innerHTML = "this is da city";
+          console.log("button 1 activated")
+        })
+        button_2.addEventListener('click', () => {
+          Reset()
+
+          button_2.style.backgroundColor = "#333"
+
+          img.src = "IMG/img3.jpg";
+          document.getElementById("title").innerHTML = "this is da sea";
+          document.getElementById("kop").innerHTML = "this is da sea";
+
+          console.log("button 2 activated")
+        })
+        button_3.addEventListener('click', () => {
+          Reset()
+
+          button_3.style.backgroundColor = "#333"
+
+          img.src = "IMG/img4.jpg";
+          document.getElementById("title").innerHTML = "this is da sea with a bridge for cars";
+          document.getElementById("kop").innerHTML = "this is da sea with a bridge for cars";
+
+          console.log("button 3 activated")
+        })
+        button_4.addEventListener('click', () => {
+          Reset()
+
+          button_4.style.backgroundColor = "#333"
+
+          img.src = "IMG/img5.jpg";
+          document.getElementById("title").innerHTML = "this is da dessert i hope";
+          document.getElementById("kop").innerHTML = "this is da dessert i hope";
+
+          console.log("button 4 activated")
+        })
+        button_5.addEventListener('click', () => {
+          Reset()
+
+          button_5.style.backgroundColor = "#333"
+
+          img.src = "IMG/img6.jpg";
+          document.getElementById("title").innerHTML = "this is da coast";
+          document.getElementById("kop").innerHTML = "this is da coast";
+          console.log("button 5 activated")
+        })
+      </script>
+</body>
+
+</html>
